@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameplay - Liste des atouts</title>
+    <link rel="stylesheet" href="liste.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="header">
+        <button
+          id="back_totop"
+          class="cacher_backtotop"
+          onclick="scrollToTop()"
+        >
+          ⮝
+        </button>
+
+        <h1>Gameplay - Liste des atouts</h1>
+        <p>
+          <i
+            >Les sorts et aptitudes sont traduit de l'anglais au français mais
+            nous conservons les noms pour faciliter la recherche.</i
+          >
+        </p>
+        <ul>
+          <li class="li_summary">
+            <a class="a_summary" href="#indrid"
+              >Indrid's Custom Races and Classes</a
+            >
+          </li>
+          <li class="li_summary">
+            <a class="a_summary" href="#raciale_indrid">⮞ Aptitudes raciales</a>
+          </li>
+          <li class="li_summary">
+            <a class="a_summary" href="#classe_indrid">⮞ Aptitudes de classe</a>
+          </li>
+          <li class="li_summary">
+            <a class="a_summary" href="#malediction_indrid"
+              >⮞ Aptitudes des malédictions</a
+            >
+          </li>
+          <li class="li_summary">
+            <a class="a_summary" href="#sorts_indrid">⮞ Liste des sorts</a>
+          </li>
+          <li class="li_summary">
+            <a class="a_summary" href="#auras_indrid">⮞ Liste des auras</a>
+          </li>
+        </ul>
+      </div>
+
+      <input type="text" id="searchTerm" placeholder="Rechercher..." />
+      <button onclick="searchSummaries()">Rechercher</button>
+
+      <div id="searchResults"></div>
+
+      <h2 id="indrid">Indrid's Custom Races and Classes</h2>
+      <div class="separator">
+        <h3 id="raciale_indrid">Aptitudes raciales <i>(Gameplay)</i></h3>
+        <hr class="separator_child" />
+      </div>
+
+      <details data-tag="1">
+        <summary>Second souffle <i>(Second Wind)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Soigne pour x% de votre maximum de points de vie toutes les 3
+              secondes lorsque vous êtes en dessous de x% de votre maximum de
+              points de vie.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Vision nocturne <i>(Night Vision)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Octroie la vision nocturne au personnage (activable avec Shift+Z
+              par défaut, configurable via le menu radial dans les paramètres
+              personnels du mod).
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Fortifié <i>(Fortified)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Augmente les points de vie maximum de x%.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Robuste <i>(Toughness)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Accorde x Armure naturelle. L'armure naturelle n'est pas prise en
+              compte dans la pénalité de poids de l'armure.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Imperméable <i>(Impervious)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Immunité à tous les effets de température extrême du jeu de base
+              (comme les coups de chaleur et les engelures).
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Œil vif <i>(Sharpeye)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Confère x% de dégâts supplémentaires avec les arcs par agilité.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Festin <i>(Feast)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Permet de dévorer les cadavres des PJ / PNJ ou les corps
+              inconscients afin de régénérer les PV (la touche par défaut est F
+              mais on peut aussi utiliser E sur les thralls et les joueurs
+              amis).
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Incorruptible <i>(Incorruptible)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Octroie l'immunité à la corruption.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Amphibien <i>(Amphibian)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Permet de respirer sous l'eau et de nager plus vite.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Fils du feu <i>(Fireborn)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Immunité aux effets météorologiques du jeu basés sur la chaleur.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Fils du froid <i>(Frostborn)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Immunité aux effets météorologies du jeu basés sur le froid.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Infatigable <i>(Tireless)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Augmente l'endurance maximale de x%.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Combattre ou fuir <i>(Fight or Flight)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Fournit un boost temporaire de vitesse et d'endurance dont les
+              paramètres sont les mêmes que ceux définis pour le trait "Tenace".
+              <br />
+              Exemple : Si "Tenace" se déclenche à 25% de PV, dure 15 secondes
+              et a un temps de recharge de 180 secondes, Combattre ou fuir se
+              déclenchera également à 25% de PV, durera 15 secondes et aura un
+              temps de recharge de 180 secondes.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Tenace <i>(Tenacity)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Lorsque vous tombez en dessous de x% de PV, vous gagnez x armure
+              et x% de vos PV max pendant 15 secondes. A un temps de recharge de
+              180 secondes. Toutes les valeurs numériques sont ajustées par les
+              admins.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Homéostasie <i>(Homeostasis)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Ajuste la température en fonction de l'environnement actuel pour
+              éviter les effets néfastes de la météo.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Puissant sorcier <i>(Potent Sorcery)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Augmente de x% les dégats des sorts. Ne s'applique pas aux sorts
+              des autres mods.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Sang froid <i>(Coldblooded)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Le corps du personnage est naturellement plus froid et donc adapté
+              aux climats plus chauds.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Sang chaud <i>(Hotblooded)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Le corps du personnage est naturellement plus chaud et donc adapté
+              aux climats plus froids.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Précision mortelle <i>(Deadly Precision)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Augmente les chances de critiques et les dommages critiques.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Transformation <i>(Shapeshifting)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Octroie la possibilité d'utiliser les transformations du mod (F
+              par défaut mais s'ajuste via les paramètres personnels du mod
+              disponible dans le menu radial)
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Vol <i>(Flight)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Accorde le don de vol à la race concernée, accessible en
+              maintenant la touche F enfoncée et en faisant apparaître le menu
+              radial. Draine l'endurance. Empêche la guérison en vol.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details data-tag="1">
+        <summary>Sang de troll <i>(Troll Blood)</i></summary>
+        <table>
+          <tbody>
+            <tr>
+              Permet à la régénération de se poursuivre même après avoir subi
+              des dégâts. Ajoute une régénération supplémentaire en fonction des
+              paramètres d'administration.
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <div class="header">
+        <div class="separator">
+          <h3 id="classe_indrid">Aptitudes de classe <i>(Gameplay)</i></h3>
+          <hr class="separator_child" />
+        </div>
+
+        <details data-tag="2">
+          <summary>Barbare <i>(Barbarian)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Gagne x (par défaut : 1) stack qui soigne x% (par défaut : 5%)
+                des dégâts bruts lorsqu'il est frappé par un ennemi, par stack,
+                en 3 secondes lorsqu'il porte une armure moyenne ou légère, 3
+                stacks maximum.
+                <br />
+                Exemple : Si vous avez 200 PV et que vous êtes touché par une
+                attaque qui vous inflige 40 points de vie, vous regagnez 2 PV en
+                3 secondes. Si vous êtes à nouveau touché par une attaque qui
+                vous inflige 40 points de dégâts, vous gagnez un autre stack et
+                récupérez à nouveau 2 PV en 3 secondes.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Robustesse épique <i>(Epic Toughness)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Le joueur bénéficie d'une réduction des dégâts de +0,2% par
+                point de survie. Cette réduction des dégâts s'applique avant les
+                dégâts réduits par l'armure et le "Physique bronzé",
+                c'est-à-dire que si vous avez 50 points de survie et que vous
+                êtes touché par une attaque de 100 points, les dégâts de cette
+                attaque seront réduits de 10% grâce au trait "Robustesse
+                épique", ainsi que de 20% supplémentaires si vous avez le
+                "Physique bronzé", et le montant restant (70) sera finalement
+                réduit par l'armure que vous portez. Le montant de réduction des
+                dégâts obtenu par point de survie est réglable par les
+                administrateurs.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Célérité <i>(Swiftness)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Vitesse de déplacement augmentée en fonction du poids de
+                l'armure (6% armure légère / 5% armure moyenne / 0% armure
+                lourde).
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>
+            Spécialisation d'armure <i>(Armor Specialization)</i>
+          </summary>
+          <table>
+            <tbody>
+              <tr>
+                Le personnage bénéficie d'une réduction supplémentaire de 40%
+                des dégâts de l'armure. De plus, le personnage a 30% de chances
+                d'éviter complètement les dégâts en fonction de la classe de
+                l'armure qu'il porte (10% armure légère / 15% armure moyenne /
+                25% armure lourde).
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Finesse de l'arme <i>(Weapon Finesse)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                x% de dégâts par agilité, x% par force et x% de vitesse
+                d'attaque par agilité (le bonus de vitesse d'attaque est annulé
+                par le bouclier). Toutes les valeurs numériques sont ajustées
+                par les administrateurs.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Esquive acrobatique <i>(Acrobatic Dodge)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Remplace les animations d'esquive par des animations qui
+                couvrent une plus grande distance.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Attaque sautée <i>(Leap Attack)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Lorsque vous sprintez, effectuez une attaque légère (LMB) pour
+                faire bondir votre personnage et infliger des dégâts à zone
+                d'effet (AoE) à tous les ennemis de la zone. Appuyez sur
+                l'attaque lourde (RMB) pendant un sprint pour effectuer un combo
+                de trois coups rapides.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Attaque chargée <i>(Charge Attack)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Lorsque vous sprintez, effectuez une attaque légère (LMB) pour
+                que votre personnage charge vers l'avant afin d'effectuer une
+                poussée rapide. Appuyez sur l'attaque lourde (RMB) pendant un
+                sprint pour effectuer un combo de trois coups rapides.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Coupe-gorge <i>(Cutthroat)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Ajoute des bonus aux coups critiques et aux dégâts des coups
+                critiques lorsque votre personnage manie des dagues.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Dompteur des bêtes <i>(Beast Tamer)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Lorsqu'il suit son propriétaire, l'animal bénéficie des bonus
+                suivants :
+                <br />
+                Votre compagnon animal gagne +3 à tous les attributs sauf la
+                précision. De plus, votre compagnon animal gagne 50% de votre
+                Survie en bonus. Le buff de compagnon animal fournit un petit
+                effet de guérison sur la durée à la fois au joueur et à
+                l'animal. Les deux sont soignés à hauteur de 2% de leur santé
+                maximale toutes les 1,5 secondes. Votre compagnon bénéficie
+                également d'une réduction des dégâts de 10% + 0,4% par Survie du
+                personnage propriétaire. Ces chiffres sont entièrement ajustées
+                par les administrateurs du serveur.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Maîtrise des auras <i>(Aura Mastery)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Débloque la capacité d'utiliser des auras. Les auras apprises
+                seront disponibles dans le menu radial en utilisant la touche T
+                (par défaut) une fois que vous les aurez obtenues
+                individuellement par le biais de livres de sorts. (Ceux-ci sont
+                fournis par les kits ou les PNJ).
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Entraînement martial <i>(Infantry Training)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Les attaques avec des armes à une main sont désormais
+                échelonnées en fonction de l'agilité et / ou de la force. Cette
+                aptitude accorde +1% de dégâts et +0,5% de vitesse d'attaque par
+                agilité, et +1% de dégâts par force. L'utilisation d'un bouclier
+                réduit ce bonus de moitié. Ces chiffres sont entièrement
+                ajustées par les administrateurs de serveur. Lorsque vous
+                bloquez avec un bouclier ou une autre main défensive équivalente
+                (comme la dague de parade), vous bénéficiez d'un buff appelé
+                "Timed Block". Si vous bloquez une attaque à portée de mêlée
+                pendant ce court buff, vous gagnez un buff appelé "retaliation"
+                qui peut être dépensé pour effectuer une attaque légère (LMB) ou
+                une attaque lourde (RMB) à faible endurance et à gros dégâts.
+                Ces deux attaques confèrent un stack d'affaiblissement en plus
+                de leurs effets normaux.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Lanceur de sorts <i>(Spellcaster)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Permet au joueur de lancer des sorts. Ceux-ci sont fournis par
+                des livres de sorts qui sont donnés par des kits ou des PNJ
+                scénarisés. L'incantation en armure moyenne impose une pénalité
+                de 10% sur la vitesse d'incantation. L'incantation en armure
+                lourde impose une pénalité de 100% sur la vitesse d'incantation.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Discret <i>(Stealth)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Permet au personnage de s'accroupir pour devenir furtif. Le
+                joueur devient indétectable par tous les PNJ n'appartenant pas
+                au personnage. Lors d'une attaque furtive, le personnage reçoit
+                un bonus de dégâts de +50% sur l'attaque furtive, qui sera
+                étiquetée comme une attaque furtive. La furtivité ne fonctionne
+                pas sur les PNJ qui ont déjà détecté le personnage.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Sorcier en armure <i>(Armored Spellcaster)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Permet une vitesse d'incantation normale des sorts en armure
+                lourde. Dans le cas contraire, le port d'une armure lourde
+                ralentirait considérablement l'exécution des sorts.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Tactique <i>(Tactics)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Donne au joueur la possibilité d'utiliser des compétences et des
+                capacités de combattant telles que le taunt (provocation) quand
+                elles sont disponibles pour la classe correspondante. Les temps
+                de recharge sont ajustés par les administrateurs.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Métamorphose <i>(Shapeshifter)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Octroie la possibilité d'utiliser les transformations du mod (F
+                par défaut mais s'ajuste via les paramètres personnels du mod
+                disponible dans le menu radial)
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Maîtrise des arcs <i>(Bow Mastery)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Ajoute des bonus aux coups critiques et aux dégâts des coups
+                critiques lorsque le personnage manie un arc ou tout autre arme
+                à distance du même type.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Vol <i>(Flight)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Accorde le don de vol à la classe concernée, accessible en
+                maintenant la touche F enfoncée et en faisant apparaître le menu
+                radial. Draine l'endurance. Empêche la guérison en vol.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>
+            Restriction de l'armure lourde <i>(Heavy Armor Restriction)</i>
+          </summary>
+          <table>
+            <tbody>
+              <tr>
+                Le personnage ne peut pas utiliser d'armure lourde.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Sans armure <i>(Unarmored)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                Le personnage ne peut pas utiliser d'armure intermédiaire ou
+                lourde.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>
+            Spécialisation à deux mains <i>(Two-Handed Specialization)</i>
+          </summary>
+          <table>
+            <tbody>
+              <tr>
+                Les armes à deux mains reçoivent x% de dégâts supplémentaires
+                par point investi dans la force. De plus, le joueur gagne
+                jusqu'à 6 stacks de "Furios Strike" chaque fois qu'un ennemi est
+                frappé avec une arme à deux mains. Le joueur reçoit +x force et
+                +x% vitesse d'attaque par stack. Toutes les valeurs numériques
+                sont ajustées par les administrateurs.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details data-tag="2">
+          <summary>Folie sanguinaire <i>(Blood Craze)</i></summary>
+          <table>
+            <tbody>
+              <tr>
+                En portant une armure légère ou intermédiaire, le personnage est
+                soigné d'un petit pourcentage des dégats directs reçus.
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <div class="header">
+          <div class="separator">
+            <h3 id="malediction_indrid">
+              Aptitudes de malédiction <i>(Gameplay)</i>
+            </h3>
+            <hr class="separator_child" />
+          </div>
+
+          <details data-tag="3">
+            <summary>Pénalité d'attributs <i>(Attribute Penalty)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Donne à tous les attributs une pénalité de -8.
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Réflexes bestials <i>(Beastly Reflexes)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Tout comme Esquive Acrobatique (Acrobatic Dodge), les
+                  loups-garous ont leur propre version de l'esquive.
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Jauge de sang <i>(Blood Bar)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Les vampires ont une barre de sang qu'ils peuvent remplir en
+                  drainant des thralls amicaux / personnages joueurs ou en
+                  utilisant Festin (Feast). La jauge diminue au fil du temps.
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Festin <i>(Feast)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Permet de dévorer les cadavres des PJ / PNJ ou les corps
+                  inconscients afin de régénérer les PV (la touche par défaut
+                  est F mais on peut aussi utiliser E sur les thralls et les
+                  joueurs amis).
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Grand saut <i>(High Jump)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Les loups-garous et les vampires sont capables de sauter plus
+                  haut que la normale.
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Vision nocturne <i>(Night Vision)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Octroie la vision nocturne au personnage (activable avec
+                  Shift+Z par défaut, configurable via le menu radial dans les
+                  paramètres personnels du mod).
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Peau dure <i>(Tough Hide)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Un loup-garou est un adversaire extrêmement coriace et seules
+                  les armes les plus puissantes peuvent percer son épais pelage.
+                  "Peau dure" est similaire à "Robustesse épique". Elle augmente
+                  le pourcentage de bonus de santé par vitalité à 7% au lieu de
+                  4%, accorde au loup-garou 400 d'armure naturelle
+                  supplémentaire ainsi qu'une résistance aux dégâts naturels par
+                  point de survie (0,2%). Tous les chiffres sont ajustés par les
+                  administrateurs.
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Vol de vie <i>(Lifesteal)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Gagne x% PV sur le total des dégâts infligés par toutes les
+                  attaques.
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Créature de la nuit <i>(Night Creature)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Cette aptitude est un work in progress et ne fait rien pour le
+                  moment.
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details data-tag="3">
+            <summary>Griffes de loup-garou <i>(Werewolf Claws)</i></summary>
+            <table>
+              <tbody>
+                <tr>
+                  Ne pouvant attaquer qu'avec ses griffes, le loup-garou inflige
+                  des dégâts mortels à mains nues (et d'autant plus avec de la
+                  force). Elles infligent 2 points de dégats supplémentaires par
+                  point de force dépensé, sous forme de dégâts réels (réglable
+                  dans notre menu), en plus des dégâts bruts à mains nues qui
+                  sont triplés. Ces griffes sont une "arme" qui peut être
+                  équipée via le menu radial (F enfoncé par défaut lorsque vous
+                  êtes transformé). Elles ne sont plus équipées lorsque vous
+                  appuyez à nouveau dans le menu ou lorsque vous sortez de la
+                  transformation.
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <div class="header">
+            <div class="separator">
+              <h3 id="sorts_indrid">Liste des sorts <i>(Gameplay)</i></h3>
+              <hr class="separator_child" />
+            </div>
+
+            <details data-tag="4">
+              <summary>Téléportation <i>(Blink)</i></summary>
+              <table>
+                <tbody>
+                  <tr>
+                    Permet au personnage de se téléporter sur une courte
+                    distance là où celui-ci observe. La téléportation passe à
+                    travers les PNJ et les PJ mais pas à travers les murs et les
+                    objets.
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+
+            <details data-tag="4">
+              <summary>Mains brûlantes <i>(Burning Hands)</i></summary>
+              <table>
+                <tbody>
+                  <tr>
+                    Un sort de mêlée en forme de cône qui impacte les cibles
+                    avec un DoT de feu. Il inflige des dommages de base aux PJ
+                    mais des dommages perpétuels aux PNJ.
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+
+            <details data-tag="4">
+              <summary>Cône de froid <i>(Cone of cold)</i></summary>
+              <table>
+                <tbody>
+                  <tr>
+                    Un sort de mêlée en forme de cône qui ralentit les cibles.
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+
+            <details data-tag="4">
+              <summary>Trait d'énergie <i>(Energy Bolt)</i></summary>
+              <table>
+                <tbody>
+                  <tr>
+                    Une boule d'énergie violette tirée à distance pouvant
+                    toucher de multiples ennemis si ils sont pris dans sa
+                    minuscule zone d'effet.
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+
+            <details data-tag="4">
+              <summary>Boule de feu <i>(Fireball)</i></summary>
+              <table>
+                <tbody>
+                  <tr>
+                    Un sort à large zone d'effet qui inflige des dommages de feu
+                    en DoT. Il inflige des dommages de base aux PJ mais des
+                    dommages perpétuels aux PNJ.
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+
+            <details data-tag="4">
+              <summary>Grâce <i>(Mitra's Grace)</i></summary>
+              <table>
+                <tbody>
+                  <tr>
+                    Grâce est un sort de soin ciblé intelligent qui ne soigne
+                    que les membres et thralls de votre clan. Pour vous soigner,
+                    assurez-vous de ne pas avoir de cible face à vous. Pour
+                    soigner des cibles qui sont en dehors du clan, il vous
+                    faudra switcher de mode d'incantation.
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+
+            <details data-tag="4">
+              <summary>Trait d'ombre <i>(Shadow Bolt)</i></summary>
+              <table>
+                <tbody>
+                  <tr>
+                    Un simple missile magique qui se lance face à vous et frappe
+                    la cible dans son passage.
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+
+            <div class="header">
+              <div class="separator">
+                <h3 id="auras_indrid">Liste des sorts <i>(Gameplay)</i></h3>
+                <hr class="separator_child" />
+              </div>
+
+              <details data-tag="5">
+                <summary>Aura de purification <i>(Aura of Cleanse)</i></summary>
+                <table>
+                  <tbody>
+                    <tr>
+                      Offre un soin continuel et purifie lentement la corruption
+                      tant que l'aura est active. L'effet peut monter jusqu'à 6
+                      stacks et affecte le lanceur et les membres du clans /
+                      thralls alliés.
+                    </tr>
+                  </tbody>
+                </table>
+              </details>
+
+              <details data-tag="5">
+                <summary>
+                  Aura de flammes infernales <i>(Hellfire Aura)</i>
+                </summary>
+                <table>
+                  <tbody>
+                    <tr>
+                      Toute cible se trouvant autour de vous subit des dommages
+                      en DoT tant que l'aura est active jusqu'à 10 stacks
+                      maximum.
+                    </tr>
+                  </tbody>
+                </table>
+              </details>
+
+              <details data-tag="5">
+                <summary>Aura de Corruption <i>(Aura of Decay)</i></summary>
+                <table>
+                  <tbody>
+                    <tr>
+                      Inflige de la corruption et des dommages tant que l'aura
+                      est active. Elle ralentit également les cibles touchées.
+                    </tr>
+                  </tbody>
+                </table>
+              </details>
+
+              <details data-tag="5">
+                <summary>Aura de répit <i>(Aura of Respite)</i></summary>
+                <table>
+                  <tbody>
+                    <tr>
+                      Tant que l'aura est active, restore graduellement votre
+                      endurance et celles des membres / thralls de votre clan.
+                      L'effet s'accumule jusqu'à 10 stacks.
+                    </tr>
+                  </tbody>
+                </table>
+              </details>
+
+              <footer></footer>
+            </div>
+
+            <script src="script_liste.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

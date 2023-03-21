@@ -1,0 +1,182 @@
+body {
+  background-color: #252522;
+  font-family: "Lato", sans-serif;
+  color: #f9f9f9;
+}
+
+.content {
+  width: 1200px;
+  margin: auto;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #d19f72;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #d19f72;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d19f72;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #d19f72;
+}
+
+i {
+  color: #f9f9f9;
+}
+
+details {
+  padding: 5px 0px 5px 0px;
+}
+
+summary {
+  font-weight: bold;
+  color: #d19f72;
+  margin-bottom: 5px;
+}
+
+summary:hover {
+  cursor: pointer;
+}
+
+summary::selection {
+  background: transparent;
+}
+
+p {
+  margin: auto;
+  text-align: justify;
+  text-justify: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border-right: #d19f72 1px solid;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: #d19f72 1px solid;
+}
+
+td {
+  padding: 8px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+#searchTerm {
+  background: none;
+  border: #d19f72 1px solid;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+#back_totop {
+  font-size: 24px;
+  color: #d19f72;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  border: none;
+  display: none;
+}
+
+#back_totop:hover {
+  background-color: transparent;
+  color: #f9f9f9;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.afficher_backtotop {
+  display: block;
+}
+
+button {
+  background: none;
+  border: #d19f72 1px solid;
+  color: #f9f9f9;
+}
+
+button:hover {
+  background-color: #d19f72;
+  color: #252522;
+  transition: 0.2s;
+}
+
+button:active {
+  background-color: #f9f9f9;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px dashed #f9f9f9;
+}
+
+.a_summary {
+  border-bottom: 1px solid #d19f72;
+  padding-bottom: 1px;
+}
+
+.a_summary:hover {
+  color: #f9f9f9;
+  border-bottom: #f9f9f9 1px solid;
+  transition: 0.2s;
+}
+
+.li_summary {
+  padding: 0px;
+  border-bottom: none;
+}
+
+.separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.separator_child {
+  width: 100%;
+  border-top: 0px;
+  margin-left: 15px;
+}
+
+footer {
+  margin: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 95%;
+  }
+}

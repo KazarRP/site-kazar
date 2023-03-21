@@ -65,7 +65,7 @@
         <button onclick="searchSummaries()">Rechercher</button>
       </div>
 
-      <!-- Ne pas oublier de prévoir le filtre races, classes, maudits dans le js uniquement -->
+      <!-- Goliath désactivé -->
       <div class="filters">
       <select id="category-filter-subraces">
         <option value="" data-tags="" disabled selected hidden>Choisissez votre race...</option>
@@ -115,8 +115,8 @@
           <option value="" data-tags="gnome_forets">Gnome des forêts</option>
           <option value="" data-tags="gnome_roches">Gnome des roches</option>
         </optgroup>
-        <optgroup label="Goliath">
-          <option value="" data-tags="goliath">Goliath</option>
+        <optgroup label="Goliath" disabled hidden>
+          <option value="" data-tags="goliath" disabled hidden>Goliath</option>
         </optgroup>
         <optgroup label="Gobelin">
           <option value="" data-tags="gobelin">Gobelin</option>
@@ -149,6 +149,7 @@
         </optgroup>
       </select>
 
+      <!-- Ensorceleur lignée draconique métallique désactivé -->
       <select id="category-filter-subclasses">
         <option value="" data-tags="" disabled selected hidden>Choisissez votre classe...</option>
         <optgroup label="Barbare">
@@ -180,11 +181,11 @@
             <option value="" data-tags="ensorceleur_noir">Dragon noir</option>
             <option value="" data-tags="ensorceleur_rouge">Dragon rouge</option>
             <option value="" data-tags="ensorceleur_vert">Dragon vert</option>
-            <option value="" data-tags="ensorceleur_airain">Dragon d'airain</option>
-            <option value="" data-tags="ensorceleur_argent">Dragon d'argent</option>
-            <option value="" data-tags="ensorceleur_bronze">Dragon de bronze</option>
-            <option value="" data-tags="ensorceleur_cuivre">Dragon de cuivre</option>
-            <option value="" data-tags="ensorceleur_or">Dragon d'or</option>
+            <option value="" data-tags="ensorceleur_airain" disabled hidden>Dragon d'airain</option>
+            <option value="" data-tags="ensorceleur_argent" disabled hidden>Dragon d'argent</option>
+            <option value="" data-tags="ensorceleur_bronze" disabled hidden>Dragon de bronze</option>
+            <option value="" data-tags="ensorceleur_cuivre" disabled hidden>Dragon de cuivre</option>
+            <option value="" data-tags="ensorceleur_or" disabled hidden>Dragon d'or</option>
           </optgroup>
         </optgroup>
         <optgroup label="Magicien">
@@ -236,7 +237,8 @@
         </optgroup>
       </select>
 
-      <select id="category-filter-curses">
+      <!-- section entière cachée pour le moment -->
+      <select id="category-filter-curses" disabled hidden>
         <option value="" data-tags="" disabled selected hidden>Choisissez une malédiction...</option>
         <option value="" data-tags="corrompu">Corrompu</option>
         <option value="" data-tags="loup_garou">Loup-garou</option>

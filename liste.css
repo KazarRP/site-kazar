@@ -171,6 +171,43 @@ li {
   margin-left: 15px;
 }
 
+select {
+  border: #d19f72 1px solid;
+  color:#f9f9f9;
+  background: none;
+}
+
+select option {
+  background-color: #252522;
+}
+
+select option:checked {
+  background-color: #d19f72;
+  color: #252522;
+  font-weight: bold;
+}
+
+select optgroup {
+  background-color: #252522;
+}
+
+select::-webkit-scrollbar {
+  width: 6px;
+}
+
+select::-webkit-scrollbar-track {
+  background-color: #252522
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: #d19f72;
+  border-radius: 5px;
+}
+
+select::-webkit-scrollbar-thumb:hover {
+  background-color: #d19f72;
+}
+
 footer {
   margin: 100px;
 }

@@ -61,6 +61,95 @@
       <input type="text" id="searchTerm" placeholder="Rechercher..." />
       <button onclick="searchSummaries()">Rechercher</button>
 
+      <!-- Ne pas oublier de prévoir le filtre races, classes, maudits dans le js uniquement -->
+      <select id="category-filter-subraces">
+        <optgroup label="Aasimar">
+          <option value="couatl">Aasimar d'ascendance Couatl</option>
+          <option value="ange">Aasimar d'ascendance Ange</option>
+          <option value="reigar">Aasimar d'ascendance Reigar</option>
+          <option value="asura">Aasimar d'ascendance Asura</option>
+          <option value="ki-rin">Aasimar d'ascendance Ki-rin</option>
+          <option value="empyreen">Aasimar d'ascendance Empyréen</option>
+          <option value="eladrin">Aasimar d'ascendance Eladrin</option>
+        </optgroup>
+        <optgroup label="Demi-elfe">
+          <option value="demi_hautelfe">Demi Haut-elfe</option>
+          <option value="demi_elfedesbois">Demi Elfe des bois</option>
+          <option value="demi_drow">Demi Drow</option>
+        </optgroup>
+        <optgroup label="Demi-orc">
+          <option value="demi_orc">Demi-orc</option>
+        </optgroup>
+        <optgroup label="Drakéide">
+          <optgroup label="Drakéide chromatique">
+            <option value="drakeide_blanc">Drakéide blanc</option>
+            <option value="drakeide_bleu">Drakéide bleu</option>
+            <option value="drakeide_noir">Drakéide noir</option>
+            <option value="drakeide_rouge">Drakéide rouge</option>
+            <option value="drakeide_vert">Drakéide vert</option>
+          </optgroup>
+          <optgroup label="Drakéide métallique">
+            <option value="drakeide_airain">Drakéide d'airain</option>
+            <option value="drakeide_argent">Drakéide d'argent</option>
+            <option value="drakeide_bronze">Drakéide de bronze</option>
+            <option value="drakeide_cuivre">Drakéide de cuivre</option>
+            <option value="drakeide_or">Drakéide d'or</option>
+          </optgroup>
+        </optgroup>
+        <optgroup label="Elfe">
+          <option value="haut_elfe">Haut-elfe</option>
+          <option value="elfe_desbois">Elfe des bois</option>
+          <option value="drow">Drow</option>
+        </optgroup>
+        <optgroup label="Gith">
+          <option value="githyanki">Githyanki</option>
+          <option value="githzerai">Githzerai</option>
+        </optgroup>
+        <optgroup label="Gnome">
+          <option value="gnome_forets">Gnome des forêts</option>
+          <option value="gnome_roches">Gnome des roches</option>
+        </optgroup>
+        <optgroup label="Goliath">
+          <option value="goliath">Goliath</option>
+        </optgroup>
+        <optgroup label="Gobelin">
+          <option value="gobelin">Gobelin</option>
+        </optgroup>
+        <optgroup label="Génasi">
+          <option value="genasi_feu">Génasi du feu</option>
+          <option value="genasi_eau">Génasi de l'eau</option>
+          <option value="genasi_terre">Génasi de la terre</option>
+          <option value="genasi_air">Génasi de l'air</option>
+        </optgroup>
+        <optgroup label="Halfelin">
+          <option value="halfelin_piedsleger">Halfelin pieds léger</option>
+          <option value="halfelin_robuste">Halfelin robuste</option>
+        </optgroup>
+        <optgroup label="Humain">
+          <option value="humain">Humain</option>
+        </optgroup>
+        <optgroup label="Nain">
+          <option value="nain_collines">Nain des collines</option>
+          <option value="nain_montagnes">Nain des montagnes</option>
+        </optgroup>
+        <optgroup label="Tieffelin">
+          <option value="tieffelin_asmodee">Tieffelin ascendance Asmodée</option>
+          <option value="tieffelin_belzebuth">Tieffelin ascendance Belzébuth</option>
+          <option value="tieffelin_dispater">Tieffelin ascendance Dispater</option>
+          <option value="tieffelin_glasya">Tieffelin ascendance Glasya</option>
+          <option value="tieffelin_levistus">Tieffelin ascendance Levistus</option>
+          <option value="tieffelin_mephistopheles">Tieffelin ascendance Méphistophélès</option>
+          <option value="tieffelin_zariel">Tieffelin ascendance Zariel</option>
+        </optgroup>
+      </select>
+
+      <select id="category-filter-subclasses">
+        <optgroup label="Barbare">
+          <option value="barbare_berserker">Berserker</option>
+          <option value="barbare_magiesauvage">Magie sauvage</option>
+        </optgroup>
+      </select>
+
       <div id="searchResults"></div>
 
       <h2 id="indrid">Indrid's Custom Races and Classes</h2>

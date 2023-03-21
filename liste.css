@@ -158,6 +158,12 @@ li {
   border-bottom: none;
 }
 
+.search_options {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .separator {
   display: flex;
   justify-content: space-between;
@@ -215,5 +221,11 @@ footer {
 @media screen and (max-width: 1200px) {
   .content {
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .search_options {
+    flex-direction: column;
   }
 }

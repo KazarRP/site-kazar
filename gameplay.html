@@ -58,11 +58,17 @@
         </ul>
       </div>
 
-      <input type="text" id="searchTerm" placeholder="Rechercher..." />
-      <button onclick="searchSummaries()">Rechercher</button>
+      <div class="search_options">
+      
+      <div class="searchbar">
+        <input type="text" id="searchTerm" placeholder="Rechercher..." />
+        <button onclick="searchSummaries()">Rechercher</button>
+      </div>
 
       <!-- Ne pas oublier de prévoir le filtre races, classes, maudits dans le js uniquement -->
+      <div class="filters">
       <select id="category-filter-subraces">
+        <option value="" disabled selected hidden>Choisissez votre race...</option>
         <optgroup label="Aasimar">
           <option value="couatl">Aasimar d'ascendance Couatl</option>
           <option value="ange">Aasimar d'ascendance Ange</option>
@@ -144,11 +150,21 @@
       </select>
 
       <select id="category-filter-subclasses">
+        <option value="" disabled selected hidden>Choisissez votre classe...</option>
         <optgroup label="Barbare">
           <option value="barbare_berserker">Berserker</option>
           <option value="barbare_magiesauvage">Magie sauvage</option>
         </optgroup>
       </select>
+
+      <select id="category-filter-curses">
+        <option value="" disabled selected hidden>Choisissez une malédiction...</option>
+        <option value="loup_garou">Loup-garou</option>
+        <option value="vampire">Vampire</option>
+      </select>
+    </div>
+
+      </div>
 
       <div id="searchResults"></div>
 

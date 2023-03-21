@@ -125,6 +125,7 @@ button:hover {
   background-color: #d19f72;
   color: #252522;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 button:active {

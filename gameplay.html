@@ -35,7 +35,7 @@
         <ul>
           <li class="li_summary">
             <a class="a_summary" href="#indrid"
-              >Indrid's Custom Races and Classes</a
+              >IndridCustom Races and Classes</a
             >
           </li>
           <li class="li_summary">
@@ -68,99 +68,179 @@
       <!-- Ne pas oublier de prévoir le filtre races, classes, maudits dans le js uniquement -->
       <div class="filters">
       <select id="category-filter-subraces">
-        <option value="" disabled selected hidden>Choisissez votre race...</option>
+        <option value="" data-tags="" disabled selected hidden>Choisissez votre race...</option>
         <optgroup label="Aasimar">
-          <option value="couatl">Aasimar d'ascendance Couatl</option>
-          <option value="ange">Aasimar d'ascendance Ange</option>
-          <option value="reigar">Aasimar d'ascendance Reigar</option>
-          <option value="asura">Aasimar d'ascendance Asura</option>
-          <option value="ki-rin">Aasimar d'ascendance Ki-rin</option>
-          <option value="empyreen">Aasimar d'ascendance Empyréen</option>
-          <option value="eladrin">Aasimar d'ascendance Eladrin</option>
+          <option value="" data-tags="couatl">Aasimar d'ascendance Couatl</option>
+          <option value="" data-tags="ange">Aasimar d'ascendance Ange</option>
+          <option value="" data-tags="reigar">Aasimar d'ascendance Reigar</option>
+          <option value="" data-tags="asura">Aasimar d'ascendance Asura</option>
+          <option value="" data-tags="ki-rin">Aasimar d'ascendance Ki-rin</option>
+          <option value="" data-tags="empyreen">Aasimar d'ascendance Empyréen</option>
+          <option value="" data-tags="eladrin">Aasimar d'ascendance Eladrin</option>
         </optgroup>
         <optgroup label="Demi-elfe">
-          <option value="demi_hautelfe">Demi Haut-elfe</option>
-          <option value="demi_elfedesbois">Demi Elfe des bois</option>
-          <option value="demi_drow">Demi Drow</option>
+          <option value="" data-tags="demi_hautelfe">Demi Haut-elfe</option>
+          <option value="" data-tags="demi_elfedesbois">Demi Elfe des bois</option>
+          <option value="" data-tags="demi_drow">Demi Drow</option>
         </optgroup>
         <optgroup label="Demi-orc">
-          <option value="demi_orc">Demi-orc</option>
+          <option value="" data-tags="demi_orc">Demi-orc</option>
         </optgroup>
         <optgroup label="Drakéide">
           <optgroup label="Drakéide chromatique">
-            <option value="drakeide_blanc">Drakéide blanc</option>
-            <option value="drakeide_bleu">Drakéide bleu</option>
-            <option value="drakeide_noir">Drakéide noir</option>
-            <option value="drakeide_rouge">Drakéide rouge</option>
-            <option value="drakeide_vert">Drakéide vert</option>
+            <option value="" data-tags="drakeide_blanc">Drakéide blanc</option>
+            <option value="" data-tags="drakeide_bleu">Drakéide bleu</option>
+            <option value="" data-tags="drakeide_noir">Drakéide noir</option>
+            <option value="" data-tags="drakeide_rouge">Drakéide rouge</option>
+            <option value="" data-tags="drakeide_vert">Drakéide vert</option>
           </optgroup>
           <optgroup label="Drakéide métallique">
-            <option value="drakeide_airain">Drakéide d'airain</option>
-            <option value="drakeide_argent">Drakéide d'argent</option>
-            <option value="drakeide_bronze">Drakéide de bronze</option>
-            <option value="drakeide_cuivre">Drakéide de cuivre</option>
-            <option value="drakeide_or">Drakéide d'or</option>
+            <option value="" data-tags="drakeide_airain">Drakéide d'airain</option>
+            <option value="" data-tags="drakeide_argent">Drakéide d'argent</option>
+            <option value="" data-tags="drakeide_bronze">Drakéide de bronze</option>
+            <option value="" data-tags="drakeide_cuivre">Drakéide de cuivre</option>
+            <option value="" data-tags="drakeide_or">Drakéide d'or</option>
           </optgroup>
         </optgroup>
         <optgroup label="Elfe">
-          <option value="haut_elfe">Haut-elfe</option>
-          <option value="elfe_desbois">Elfe des bois</option>
-          <option value="drow">Drow</option>
+          <option value="" data-tags="haut_elfe">Haut-elfe</option>
+          <option value="" data-tags="elfe_desbois">Elfe des bois</option>
+          <option value="" data-tags="drow">Drow</option>
         </optgroup>
         <optgroup label="Gith">
-          <option value="githyanki">Githyanki</option>
-          <option value="githzerai">Githzerai</option>
+          <option data-tags="githyanki">Githyanki</option>
+          <option value="" data-tags="githzerai">Githzerai</option>
         </optgroup>
         <optgroup label="Gnome">
-          <option value="gnome_forets">Gnome des forêts</option>
-          <option value="gnome_roches">Gnome des roches</option>
+          <option value="" data-tags="gnome_forets">Gnome des forêts</option>
+          <option value="" data-tags="gnome_roches">Gnome des roches</option>
         </optgroup>
         <optgroup label="Goliath">
-          <option value="goliath">Goliath</option>
+          <option value="" data-tags="goliath">Goliath</option>
         </optgroup>
         <optgroup label="Gobelin">
-          <option value="gobelin">Gobelin</option>
+          <option value="" data-tags="gobelin">Gobelin</option>
         </optgroup>
         <optgroup label="Génasi">
-          <option value="genasi_feu">Génasi du feu</option>
-          <option value="genasi_eau">Génasi de l'eau</option>
-          <option value="genasi_terre">Génasi de la terre</option>
-          <option value="genasi_air">Génasi de l'air</option>
+          <option value="" data-tags="genasi_feu">Génasi du feu</option>
+          <option value="" data-tags="genasi_eau">Génasi de l'eau</option>
+          <option value="" data-tags="genasi_terre">Génasi de la terre</option>
+          <option value="" data-tags="genasi_air">Génasi de l'air</option>
         </optgroup>
         <optgroup label="Halfelin">
-          <option value="halfelin_piedsleger">Halfelin pieds léger</option>
-          <option value="halfelin_robuste">Halfelin robuste</option>
+          <option value="" data-tags="halfelin_piedsleger">Halfelin pieds léger</option>
+          <option value="" data-tags="halfelin_robuste">Halfelin robuste</option>
         </optgroup>
         <optgroup label="Humain">
-          <option value="humain">Humain</option>
+          <option value="" data-tags="humain">Humain</option>
         </optgroup>
         <optgroup label="Nain">
-          <option value="nain_collines">Nain des collines</option>
-          <option value="nain_montagnes">Nain des montagnes</option>
+          <option value="" data-tags="nain_collines">Nain des collines</option>
+          <option value="" data-tags="nain_montagnes">Nain des montagnes</option>
         </optgroup>
         <optgroup label="Tieffelin">
-          <option value="tieffelin_asmodee">Tieffelin ascendance Asmodée</option>
-          <option value="tieffelin_belzebuth">Tieffelin ascendance Belzébuth</option>
-          <option value="tieffelin_dispater">Tieffelin ascendance Dispater</option>
-          <option value="tieffelin_glasya">Tieffelin ascendance Glasya</option>
-          <option value="tieffelin_levistus">Tieffelin ascendance Levistus</option>
-          <option value="tieffelin_mephistopheles">Tieffelin ascendance Méphistophélès</option>
-          <option value="tieffelin_zariel">Tieffelin ascendance Zariel</option>
+          <option value="" data-tags="tieffelin_asmodee">Tieffelin ascendance Asmodée</option>
+          <option value="" data-tags="tieffelin_belzebuth">Tieffelin ascendance Belzébuth</option>
+          <option value="" data-tags="tieffelin_dispater">Tieffelin ascendance Dispater</option>
+          <option value="" data-tags="tieffelin_glasya">Tieffelin ascendance Glasya</option>
+          <option value="" data-tags="tieffelin_levistus">Tieffelin ascendance Levistus</option>
+          <option value="" data-tags="tieffelin_mephistopheles">Tieffelin ascendance Méphistophélès</option>
+          <option value="" data-tags="tieffelin_zariel">Tieffelin ascendance Zariel</option>
         </optgroup>
       </select>
 
       <select id="category-filter-subclasses">
-        <option value="" disabled selected hidden>Choisissez votre classe...</option>
+        <option value="" data-tags="" disabled selected hidden>Choisissez votre classe...</option>
         <optgroup label="Barbare">
-          <option value="barbare_berserker">Berserker</option>
-          <option value="barbare_magiesauvage">Magie sauvage</option>
+          <option value="" data-tags="barbare_berserker">Berserker</option>
+          <option value="" data-tags="barbare_magiesauvage">Magie sauvage</option>
+        </optgroup>
+        <optgroup label="Barde">
+          <option value="" data-tags="barde_savoir">Collège du savoir</option>
+          <option value="" data-tags="barde_vaillance">Collège de la vaillance</option>
+        </optgroup>
+        <optgroup label="Clerc">
+          <option value="" data-tags="clerc_duperie">Domaine de la duperie</option>
+          <option value="" data-tags="clerc_guerre">Domaine de la guerre</option>
+          <option value="" data-tags="clerc_lumiere">Domaine de la lumière</option>
+          <option value="" data-tags="clerc_nature">Domaine de la nature</option>
+          <option value="" data-tags="clerc_tempete">Domaine de la tempête</option>
+          <option value="" data-tags="clerc_vie">Domaine de la vie</option>
+          <option value="" data-tags="clerc_forge">Domaine de la forge</option>
+        </optgroup>
+        <optgroup label="Druide">
+          <option value="" data-tags="druide_lune">Cercle de la lune</option>
+          <option value="" data-tags="druide_terre">Cercle de la terre</option>
+        </optgroup>
+        <optgroup label="Ensorceleur">
+          <option value="" data-tags="ensorceleur_magiesauvage">Magie sauvage</option>
+          <optgroup label="Lignée draconique">
+            <option value="" data-tags="ensorceleur_blanc">Dragon blanc</option>
+            <option value="" data-tags="ensorceleur_bleu">Dragon bleu</option>
+            <option value="" data-tags="ensorceleur_noir">Dragon noir</option>
+            <option value="" data-tags="ensorceleur_rouge">Dragon rouge</option>
+            <option value="" data-tags="ensorceleur_vert">Dragon vert</option>
+            <option value="" data-tags="ensorceleur_airain">Dragon d'airain</option>
+            <option value="" data-tags="ensorceleur_argent">Dragon d'argent</option>
+            <option value="" data-tags="ensorceleur_bronze">Dragon de bronze</option>
+            <option value="" data-tags="ensorceleur_cuivre">Dragon de cuivre</option>
+            <option value="" data-tags="ensorceleur_or">Dragon d'or</option>
+          </optgroup>
+        </optgroup>
+        <optgroup label="Magicien">
+          <option value="" data-tags="magicien_abjuration">École d'abjuration</option>
+          <option value="" data-tags="magicien_divination">École de divination</option>
+          <option value="" data-tags="magicien_enchantement">École d'enchantement</option>
+          <option value="" data-tags="magicien_evocation">École d'évocation</option>
+          <option value="" data-tags="magicien_illusion">École d'illusion</option>
+        </optgroup>
+        <optgroup label="Moine">
+          <option value="" data-tags="moine_paume">Voie de la paume</option>
+          <option value="" data-tags="moine_ombre">Voie de l'ombre</option>
+          <option value="" data-tags="moine_elements">Voie des quatre éléments</option>
+        </optgroup>
+        <optgroup label="Guerrier">
+          <option value="" data-tags="guerrier_champion">Champion</option>
+          <option value="" data-tags="guerrier_maitredeguerre">Maître de guerre</option>
+          <option value="" data-tags="guerrier_samourai">Samourai</option>
+          <option value="" data-tags="guerrier_chevalierocculte">Chevalier occulte</option>
+        </optgroup>
+        <optgroup label="Occultiste">
+          <optgroup label="Pacte de la lame">
+            <option value="" data-tags="occultiste_lame_fielon">Patron fiélon</option>
+            <option value="" data-tags="occultiste_lame_archifee">Patron archifée</option>
+            <option value="" data-tags="occultiste_lame_grandancien">Patron grand ancien</option>
+            <option value="" data-tags="occultiste_lame_genie">Patron génie</option>
+          </optgroup>
+          <optgroup label="Pacte du grimoire">
+            <option value="" data-tags="occultiste_grimoire_fielon">Patron fiélon</option>
+            <option value="" data-tags="occultiste_grimoire_archifee">Patron archifée</option>
+            <option value="" data-tags="occultiste_grimoire_grandancien">Patron grand ancien</option>
+            <option value="" data-tags="occultiste_grimoire_genie">Patron génie</option>
+          </optgroup>
+        </optgroup>
+        <optgroup label="Paladin">
+          <option value="" data-tags="paladin_devotion">Serment de dévotion</option>
+          <option value="" data-tags="paladin_anciens">Serment des anciens</option>
+          <option value="" data-tags="paladin_vengeance">Serment de vengeance</option>
+          <option value="" data-tags="paladin_briseurserment">Briseur de serment</option>
+        </optgroup>
+        <optgroup label="Rodeur">
+          <option value="" data-tags="rodeur_chasseur">Chasseur</option>
+          <option value="" data-tags="rodeur_conclave">Conclave</option>
+        </optgroup>
+        <optgroup label="Roublard">
+          <option value="" data-tags="roublard_assassin">Assassin</option>
+          <option value="" data-tags="roublard_voleur">Voleur</option>
+          <option value="" data-tags="roublard_escrocarcanique">Escroc arcanique</option>
         </optgroup>
       </select>
 
       <select id="category-filter-curses">
-        <option value="" disabled selected hidden>Choisissez une malédiction...</option>
-        <option value="loup_garou">Loup-garou</option>
-        <option value="vampire">Vampire</option>
+        <option value="" data-tags="" disabled selected hidden>Choisissez une malédiction...</option>
+        <option value="" data-tags="corrompu">Corrompu</option>
+        <option value="" data-tags="loup_garou">Loup-garou</option>
+        <option value="" data-tags="vampire">Vampire</option>
       </select>
     </div>
 
@@ -168,13 +248,13 @@
 
       <div id="searchResults"></div>
 
-      <h2 id="indrid">Indrid's Custom Races and Classes</h2>
+      <h2 id="indrid">IndridCustom Races and Classes</h2>
       <div class="separator">
         <h3 id="raciale_indrid">Aptitudes raciales <i>(Gameplay)</i></h3>
         <hr class="separator_child" />
       </div>
 
-      <details data-tag="1">
+      <details data-tags="githyanki">
         <summary>Second souffle <i>(Second Wind)</i></summary>
         <table>
           <tbody>
@@ -187,7 +267,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Vision nocturne <i>(Night Vision)</i></summary>
         <table>
           <tbody>
@@ -200,7 +280,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Fortifié <i>(Fortified)</i></summary>
         <table>
           <tbody>
@@ -211,7 +291,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Robuste <i>(Toughness)</i></summary>
         <table>
           <tbody>
@@ -223,7 +303,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Imperméable <i>(Impervious)</i></summary>
         <table>
           <tbody>
@@ -235,7 +315,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Œil vif <i>(Sharpeye)</i></summary>
         <table>
           <tbody>
@@ -246,7 +326,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Festin <i>(Feast)</i></summary>
         <table>
           <tbody>
@@ -260,7 +340,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Incorruptible <i>(Incorruptible)</i></summary>
         <table>
           <tbody>
@@ -271,7 +351,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Amphibien <i>(Amphibian)</i></summary>
         <table>
           <tbody>
@@ -282,7 +362,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Fils du feu <i>(Fireborn)</i></summary>
         <table>
           <tbody>
@@ -293,7 +373,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Fils du froid <i>(Frostborn)</i></summary>
         <table>
           <tbody>
@@ -304,7 +384,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Infatigable <i>(Tireless)</i></summary>
         <table>
           <tbody>
@@ -315,7 +395,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Combattre ou fuir <i>(Fight or Flight)</i></summary>
         <table>
           <tbody>
@@ -332,7 +412,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Tenace <i>(Tenacity)</i></summary>
         <table>
           <tbody>
@@ -346,7 +426,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Homéostasie <i>(Homeostasis)</i></summary>
         <table>
           <tbody>
@@ -358,19 +438,19 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Puissant sorcier <i>(Potent Sorcery)</i></summary>
         <table>
           <tbody>
             <tr>
-              Augmente de x% les dégats des sorts. Ne s'applique pas aux sorts
+              Augmente de x% les dégats des sorts. Neapplique pas aux sorts
               des autres mods.
             </tr>
           </tbody>
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Sang froid <i>(Coldblooded)</i></summary>
         <table>
           <tbody>
@@ -382,7 +462,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Sang chaud <i>(Hotblooded)</i></summary>
         <table>
           <tbody>
@@ -394,7 +474,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Précision mortelle <i>(Deadly Precision)</i></summary>
         <table>
           <tbody>
@@ -405,20 +485,20 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Transformation <i>(Shapeshifting)</i></summary>
         <table>
           <tbody>
             <tr>
               Octroie la possibilité d'utiliser les transformations du mod (F
-              par défaut mais s'ajuste via les paramètres personnels du mod
+              par défaut maisajuste via les paramètres personnels du mod
               disponible dans le menu radial)
             </tr>
           </tbody>
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Vol <i>(Flight)</i></summary>
         <table>
           <tbody>
@@ -431,7 +511,7 @@
         </table>
       </details>
 
-      <details data-tag="1">
+      <details value="" data-tags="">
         <summary>Sang de troll <i>(Troll Blood)</i></summary>
         <table>
           <tbody>
@@ -450,7 +530,7 @@
           <hr class="separator_child" />
         </div>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Barbare <i>(Barbarian)</i></summary>
           <table>
             <tbody>
@@ -470,13 +550,13 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Robustesse épique <i>(Epic Toughness)</i></summary>
           <table>
             <tbody>
               <tr>
                 Le joueur bénéficie d'une réduction des dégâts de +0,2% par
-                point de survie. Cette réduction des dégâts s'applique avant les
+                point de survie. Cette réduction des dégâtsapplique avant les
                 dégâts réduits par l'armure et le "Physique bronzé",
                 c'est-à-dire que si vous avez 50 points de survie et que vous
                 êtes touché par une attaque de 100 points, les dégâts de cette
@@ -491,7 +571,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Célérité <i>(Swiftness)</i></summary>
           <table>
             <tbody>
@@ -504,7 +584,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>
             Spécialisation d'armure <i>(Armor Specialization)</i>
           </summary>
@@ -521,7 +601,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Finesse de l'arme <i>(Weapon Finesse)</i></summary>
           <table>
             <tbody>
@@ -535,7 +615,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Esquive acrobatique <i>(Acrobatic Dodge)</i></summary>
           <table>
             <tbody>
@@ -547,7 +627,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Attaque sautée <i>(Leap Attack)</i></summary>
           <table>
             <tbody>
@@ -562,7 +642,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Attaque chargée <i>(Charge Attack)</i></summary>
           <table>
             <tbody>
@@ -576,7 +656,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Coupe-gorge <i>(Cutthroat)</i></summary>
           <table>
             <tbody>
@@ -588,7 +668,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Dompteur des bêtes <i>(Beast Tamer)</i></summary>
           <table>
             <tbody>
@@ -610,7 +690,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Maîtrise des auras <i>(Aura Mastery)</i></summary>
           <table>
             <tbody>
@@ -625,7 +705,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Entraînement martial <i>(Infantry Training)</i></summary>
           <table>
             <tbody>
@@ -649,7 +729,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Lanceur de sorts <i>(Spellcaster)</i></summary>
           <table>
             <tbody>
@@ -664,12 +744,12 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Discret <i>(Stealth)</i></summary>
           <table>
             <tbody>
               <tr>
-                Permet au personnage de s'accroupir pour devenir furtif. Le
+                Permet au personnage deaccroupir pour devenir furtif. Le
                 joueur devient indétectable par tous les PNJ n'appartenant pas
                 au personnage. Lors d'une attaque furtive, le personnage reçoit
                 un bonus de dégâts de +50% sur l'attaque furtive, qui sera
@@ -680,7 +760,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Sorcier en armure <i>(Armored Spellcaster)</i></summary>
           <table>
             <tbody>
@@ -693,7 +773,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Tactique <i>(Tactics)</i></summary>
           <table>
             <tbody>
@@ -707,20 +787,20 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Métamorphose <i>(Shapeshifter)</i></summary>
           <table>
             <tbody>
               <tr>
                 Octroie la possibilité d'utiliser les transformations du mod (F
-                par défaut mais s'ajuste via les paramètres personnels du mod
+                par défaut maisajuste via les paramètres personnels du mod
                 disponible dans le menu radial)
               </tr>
             </tbody>
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Maîtrise des arcs <i>(Bow Mastery)</i></summary>
           <table>
             <tbody>
@@ -733,7 +813,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Vol <i>(Flight)</i></summary>
           <table>
             <tbody>
@@ -746,7 +826,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>
             Restriction de l'armure lourde <i>(Heavy Armor Restriction)</i>
           </summary>
@@ -759,7 +839,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Sans armure <i>(Unarmored)</i></summary>
           <table>
             <tbody>
@@ -771,7 +851,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>
             Spécialisation à deux mains <i>(Two-Handed Specialization)</i>
           </summary>
@@ -789,7 +869,7 @@
           </table>
         </details>
 
-        <details data-tag="2">
+        <details value="" data-tags="">
           <summary>Folie sanguinaire <i>(Blood Craze)</i></summary>
           <table>
             <tbody>
@@ -809,7 +889,7 @@
             <hr class="separator_child" />
           </div>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Pénalité d'attributs <i>(Attribute Penalty)</i></summary>
             <table>
               <tbody>
@@ -820,7 +900,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Réflexes bestials <i>(Beastly Reflexes)</i></summary>
             <table>
               <tbody>
@@ -832,7 +912,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Jauge de sang <i>(Blood Bar)</i></summary>
             <table>
               <tbody>
@@ -845,7 +925,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Festin <i>(Feast)</i></summary>
             <table>
               <tbody>
@@ -859,7 +939,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Grand saut <i>(High Jump)</i></summary>
             <table>
               <tbody>
@@ -871,7 +951,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Vision nocturne <i>(Night Vision)</i></summary>
             <table>
               <tbody>
@@ -884,7 +964,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Peau dure <i>(Tough Hide)</i></summary>
             <table>
               <tbody>
@@ -902,7 +982,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Vol de vie <i>(Lifesteal)</i></summary>
             <table>
               <tbody>
@@ -914,7 +994,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Créature de la nuit <i>(Night Creature)</i></summary>
             <table>
               <tbody>
@@ -926,7 +1006,7 @@
             </table>
           </details>
 
-          <details data-tag="3">
+          <details value="" data-tags="">
             <summary>Griffes de loup-garou <i>(Werewolf Claws)</i></summary>
             <table>
               <tbody>
@@ -952,7 +1032,7 @@
               <hr class="separator_child" />
             </div>
 
-            <details data-tag="4">
+            <details value="" data-tags="">
               <summary>Téléportation <i>(Blink)</i></summary>
               <table>
                 <tbody>
@@ -966,7 +1046,7 @@
               </table>
             </details>
 
-            <details data-tag="4">
+            <details value="" data-tags="">
               <summary>Mains brûlantes <i>(Burning Hands)</i></summary>
               <table>
                 <tbody>
@@ -979,7 +1059,7 @@
               </table>
             </details>
 
-            <details data-tag="4">
+            <details value="" data-tags="">
               <summary>Cône de froid <i>(Cone of cold)</i></summary>
               <table>
                 <tbody>
@@ -990,7 +1070,7 @@
               </table>
             </details>
 
-            <details data-tag="4">
+            <details value="" data-tags="">
               <summary>Trait d'énergie <i>(Energy Bolt)</i></summary>
               <table>
                 <tbody>
@@ -1003,7 +1083,7 @@
               </table>
             </details>
 
-            <details data-tag="4">
+            <details value="" data-tags="">
               <summary>Boule de feu <i>(Fireball)</i></summary>
               <table>
                 <tbody>
@@ -1016,8 +1096,8 @@
               </table>
             </details>
 
-            <details data-tag="4">
-              <summary>Grâce <i>(Mitra's Grace)</i></summary>
+            <details value="" data-tags="">
+              <summary>Grâce <i>(MitraGrace)</i></summary>
               <table>
                 <tbody>
                   <tr>
@@ -1031,7 +1111,7 @@
               </table>
             </details>
 
-            <details data-tag="4">
+            <details value="" data-tags="">
               <summary>Trait d'ombre <i>(Shadow Bolt)</i></summary>
               <table>
                 <tbody>
@@ -1049,7 +1129,7 @@
                 <hr class="separator_child" />
               </div>
 
-              <details data-tag="5">
+              <details value="" data-tags="">
                 <summary>Aura de purification <i>(Aura of Cleanse)</i></summary>
                 <table>
                   <tbody>
@@ -1063,7 +1143,7 @@
                 </table>
               </details>
 
-              <details data-tag="5">
+              <details value="" data-tags="">
                 <summary>
                   Aura de flammes infernales <i>(Hellfire Aura)</i>
                 </summary>
@@ -1078,7 +1158,7 @@
                 </table>
               </details>
 
-              <details data-tag="5">
+              <details value="" data-tags="">
                 <summary>Aura de Corruption <i>(Aura of Decay)</i></summary>
                 <table>
                   <tbody>
@@ -1090,14 +1170,14 @@
                 </table>
               </details>
 
-              <details data-tag="5">
+              <details value="" data-tags="">
                 <summary>Aura de répit <i>(Aura of Respite)</i></summary>
                 <table>
                   <tbody>
                     <tr>
                       Tant que l'aura est active, restore graduellement votre
                       endurance et celles des membres / thralls de votre clan.
-                      L'effet s'accumule jusqu'à 10 stacks.
+                      L'effetaccumule jusqu'à 10 stacks.
                     </tr>
                   </tbody>
                 </table>

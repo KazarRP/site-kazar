@@ -65,6 +65,15 @@ summary::selection {
   background: transparent;
 }
 
+.tableau_rr {
+  width: 100%;
+}
+
+.tableau_bonus {
+  width: 100%;
+  margin-left: 50px;
+}
+
 p {
   margin: auto;
   text-align: justify;
@@ -73,10 +82,6 @@ p {
 
 table {
   border-collapse: collapse;
-}
-
-th {
-  border-right: #d19f72 1px solid;
 }
 
 th,
@@ -223,9 +228,43 @@ select::-webkit-scrollbar-thumb:hover {
   background-color: #d19f72;
 }
 
+#fiche_personnage {
+  display: flex;
+}
+
 footer {
   margin: 100px;
 }
+
+.value {
+  text-align: center;
+}
+
+.attribute-name {
+  color: #d19f72;
+  font-weight: bold;
+  border: #d19f72 1px solid;
+  border-right: none;
+}
+
+.skill-name {
+  padding-left: 20px;
+  border-bottom: none;
+}
+
+.valeur {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.valeur-attribute {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} 
 
 @media screen and (max-width: 1200px) {
   .content {
